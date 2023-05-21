@@ -13,7 +13,7 @@ var usersRouter = require('./routes/users');
 var authRouter = require('./routes/auth');
 var projectsRouter = require('./routes/projects');
 // var commentsRouter = require('./routes/comments');
-// var blogsRouter = require('./routes/blogs');
+var blogsRouter = require('./routes/blogs');
 
 var app = express();
 
@@ -39,6 +39,6 @@ app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/projects', projectsRouter);
 // app.use('/comments', commentsRouter);
-// app.use('/blogs', blogsRouter);
+app.use('/blogs', blogsRouter);
 
 module.exports = app;
