@@ -12,6 +12,12 @@ module.exports = {
       date: {
         type: Sequelize.DATE
       },
+      title: {
+        type: Sequelize.STRING
+      },
+      affirmation: {
+        type: Sequelize.STRING
+      },
       entry: {
         type: Sequelize.TEXT
       },
